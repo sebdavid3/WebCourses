@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitski Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Mitski Survey Form</h1>
+    <p id="description">survey to know the opinion about the Mitski's musical work</p>
+
+    <form id="survey-form" action="post">
+        <fieldset>
+            <label id="name-label" for="name">Type your name: <br><input id="name" type="text" placeholder="Mitski" required></label>
+            <label id="email-label" for="email">Type your email: <br><input id="email" type="email" placeholder="miaumiau@uwu.com" required></label>
+            <label id="number-label" for="age"> How old are you? <br><input id="number" id="age" type="number" min="13" max="90" placeholder="15"></label>
+            <label for="gender">What is your gender? <br> <select name="gender" id="dropdown" required><option disabled selected value>Gender</option><option value="male">Male</option> <option value="female">Female</option><option value="non-binary">Non-Binary</option></select> </label>
+        </fieldset>
+        <fieldset>
+            <p>For you Mitski is:</p>
+            <label for="opinion"><input
+              id="amazing"
+              type="radio"
+              name="opinion"
+              value="amazing"
+              />
+            Amazing</label
+          >
+          <label for="opinion"
+            ><input
+              id="a queen"
+              type="radio"
+              name="opinion"
+              class="inline"
+              value="queen"
+            />
+            A Queen</label
+          >
+        </fieldset>
+        <fieldset>
+            <p>check the words that most closely match your opinion about mitski </p>
+            <label><input type="checkbox" name="words" value="genius">genius</label>
+            <label><input type="checkbox" name="words" value="Chill">Chill</label>
+            <label><input type="checkbox" name="words" value="Energetic">Energetic</label>
+            <label><input type="checkbox" name="words" value="Loyal">Loyal</label>
+            <label><input type="checkbox" name="words" value="Emotional">Emotional</label>
+            <label><input type="checkbox" name="words" value="Loving">Loving</label>
+        </fieldset>
+        <fieldset>
+            <label for="letter">Write a letter to Mitski <br> <textarea id="letter" name="letter" rows="10" cols="50"placeholder="Mitski you save my life because..."></textarea></label>
+        </fieldset>
+        <input id="submit" type="submit">
+    </form>
+</body>
+</html>
